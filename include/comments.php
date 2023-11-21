@@ -31,7 +31,7 @@ while ($row = mysqli_fetch_assoc($query)) {
         $context = $_POST["comments"];
         $page_id = $_GET['page_id'];
         $email = $_SESSION['email'];
-        if (!$email) $email = "NULL";
+        if (!$email) $email = "Anonymous";
         $sql = "insert into comments(context, page_id, user_email) 
                 values('".$context."','".$page_id."','".$email."')";
         mysqli_query($conn,$sql);

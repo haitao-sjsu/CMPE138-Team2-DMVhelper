@@ -3,7 +3,7 @@
 <html>
     <body>
 <?php
-$sql = "select * from comments order by time_stamp limit 10";
+$sql = "select * from comments order by time_stamp desc limit 10";
 $query = mysqli_query($conn, $sql);
 while ($row = mysqli_fetch_assoc($query)) {
     $context = $row['context'];

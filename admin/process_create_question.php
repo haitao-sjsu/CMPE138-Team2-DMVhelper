@@ -29,8 +29,8 @@
         $result = mysqli_query($conn,$sql);
         
         if ($result)
-            echo "insertion successful";
+            echo "creation successful";
         else
-            echo "insertion fail";
+            echo "creation fail";
     }
 ?>

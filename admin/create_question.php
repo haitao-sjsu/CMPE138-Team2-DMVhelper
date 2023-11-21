@@ -1,12 +1,12 @@
 <html>
     <head>
-        <title>Add Question</title>
+        <title>Create Question</title>
         <link href="../css/style.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
 
-    <form action="process_question.php" method="post">
+    <form action="process_create_question.php" method="post">
     <label for="question_stem">question_stem:</label>
     <input type="text" id="question_stem" name="question_stem" style="width: 500px; height: 100px;">
     <br />
