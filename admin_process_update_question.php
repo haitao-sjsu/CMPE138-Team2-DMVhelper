@@ -1,12 +1,12 @@
 <?php include('include/config.php') ?>
 <html>
 <head>
-    <title>View all questions</title>
+    <title><?php echo $UI['admin_crud_question']['title2'][$lang] ?></title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <!-- HEADER -->
-    <div class="center-text"><h1>View all questions</h1></div>
+    <div class="center-text"><h1><?php echo $UI['admin_crud_question']['title2'][$lang] ?></h1></div>
     <!--LOGIN-->
     <?php include('include/login.php') ?>
     <hr>

@@ -129,6 +129,12 @@ $UI = array(
             'zh' => '测试'
         ),
     ),
+    'user_view_one_test' => array(
+        'title' => array(
+            'en' => 'Previous Mock Test',
+            'zh' => '模拟测试'
+        ),
+    ),
     'user_view_all_wrong_questions' => array(
         'title' => array(
             'en' => 'Missed Questions Collection',

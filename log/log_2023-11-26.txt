@@ -365,3 +365,41 @@
 [2023-11-26 12:13:49.508063] [info] haitao.long@sjsu.edu, admin_view_delete_comments.php, select * from comments order by time_stamp desc limit 10
 [2023-11-26 12:13:54.071382] [info] haitao.long@sjsu.edu logged out
 [2023-11-26 12:13:54.074038] [info] Anonymous, admin_view_delete_comments.php, select * from comments order by time_stamp desc limit 10
+[2023-11-26 12:18:16.091474] [info] Anonymous, admin_view_delete_comments.php, SELECT * FROM users WHERE user_email='haitao.long@sjsu.edu' AND hashed_password='8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+[2023-11-26 12:18:16.096574] [info] haitao.long@sjsu.edu logged in
+[2023-11-26 12:18:16.099149] [info] haitao.long@sjsu.edu, admin_view_delete_comments.php, select * from comments order by time_stamp desc limit 10
+[2023-11-26 12:18:17.905129] [info] haitao.long@sjsu.edu, admin_view_delete_comments.php, select * from comments order by time_stamp desc limit 10
+[2023-11-26 12:18:22.615695] [info] haitao.long@sjsu.edu, user_view_all_tests.php, SELECT * FROM mock_tests 
+        WHERE user_email = 'haitao.long@sjsu.edu' order by test_time desc
+[2023-11-26 12:18:24.582674] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT question_id from tests_contain_questions WHERE test_id = 60
+[2023-11-26 12:18:24.585711] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT * FROM questions WHERE question_id = 1
+[2023-11-26 12:18:24.587044] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT * FROM questions WHERE question_id = 12
+[2023-11-26 12:18:29.051944] [info] haitao.long@sjsu.edu, user_view_all_tests.php, SELECT * FROM mock_tests 
+        WHERE user_email = 'haitao.long@sjsu.edu' order by test_time desc
+[2023-11-26 12:20:20.930782] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT question_id from tests_contain_questions WHERE test_id = 58
+[2023-11-26 12:20:20.936629] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT * FROM questions WHERE question_id = 1
+[2023-11-26 12:20:20.937594] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT * FROM questions WHERE question_id = 12
+[2023-11-26 12:20:23.098843] [info] haitao.long@sjsu.edu, user_view_all_tests.php, SELECT * FROM mock_tests 
+        WHERE user_email = 'haitao.long@sjsu.edu' order by test_time desc
+[2023-11-26 12:20:45.739795] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT question_id from tests_contain_questions WHERE test_id = 59
+[2023-11-26 12:20:45.741488] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT * FROM questions WHERE question_id = 1
+[2023-11-26 12:20:45.741911] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT * FROM questions WHERE question_id = 12
+[2023-11-26 12:22:36.536446] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT question_id from tests_contain_questions WHERE test_id = 59
+[2023-11-26 12:22:36.540030] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT * FROM questions WHERE question_id = 1
+[2023-11-26 12:22:36.540987] [info] haitao.long@sjsu.edu, user_view_one_test.php, SELECT * FROM questions WHERE question_id = 12
+[2023-11-26 12:22:39.810056] [info] haitao.long@sjsu.edu, admin_view_delete_update_questions.php, select * from questions order by question_id desc
+[2023-11-26 12:22:59.047399] [info] haitao.long@sjsu.edu, admin_view_delete_update_questions.php, select * from questions where question_id = 25
+[2023-11-26 12:23:56.005740] [info] haitao.long@sjsu.edu, admin_process_update_question.php, UPDATE questions
+                SET stem = 'test add some thing',
+                    num_of_options = 4,
+                    option1 = 'A',
+                    option2 = 'B',
+                    option3 = 'C',
+                    option4 = 'D',
+                    answer = '1',
+                    page_id = 's1'
+                WHERE question_id = 25
+[2023-11-26 12:24:02.195008] [info] haitao.long@sjsu.edu, admin_view_delete_update_questions.php, select * from questions order by question_id desc
+[2023-11-26 12:24:04.634928] [info] haitao.long@sjsu.edu, admin_view_delete_update_questions.php, delete from questions where question_id = 25
+[2023-11-26 12:24:04.640393] [info] haitao.long@sjsu.edu, admin_view_delete_update_questions.php, select * from questions order by question_id desc
+[2023-11-26 12:24:38.995410] [info] haitao.long@sjsu.edu, admin_view_delete_update_questions.php, select * from questions order by question_id desc

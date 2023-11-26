@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>之前的模拟测试</title>
+        <title><?php echo $UI['user_view_one_test']['title'][$lang]?></title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <style>
             .question-stem {
@@ -19,7 +19,7 @@
     </head>
     <body>
     <!-- HEADER -->
-    <div class="center-text"><h1>之前的模拟测试</h1></div>
+    <div class="center-text"><h1><?php echo $UI['user_view_one_test']['title'][$lang]?></h1></div>
     <!--LOGIN-->
     <?php include('include/login.php') ?>
     <hr>
