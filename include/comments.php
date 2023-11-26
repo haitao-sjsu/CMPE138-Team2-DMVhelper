@@ -1,11 +1,19 @@
 <?php
-$page_id = $_GET['page_id'];
-$sql = "select * from comments where page_id = '" . $page_id . "' order by time_stamp limit 3";
-$query = mysqli_query($conn, $sql);
-while ($row = mysqli_fetch_assoc($query)) {
-    $context = $row['context'];
-    $time_stamp = $row['time_stamp'];
-    $user_email = $row['user_email'];
+    if (isset($_POST['comments'])) {
+        $sql = "INSERT INTO comments(context, page_id, user_email) 
+                values ('{$_POST["comments"]}', '{$_GET['page_id']}', '{$_SESSION['email']}')";
+        $table_comments->insert($sql);
+        redirectWithoutPostVariables();
+    }
+?>
+
+<?php
+$sql = "SELECT * FROM comments WHERE page_id= '{$_GET['page_id']}' {$OPTION_COMMENT};";
+$comments = $table_comments->select($sql);
+foreach ($comments as $c) {
+    $context = $c['context'];
+    $time_stamp = $c['time_stamp'];
+    $user_email = $c['user_email'];
 ?>
 
 <form>
@@ -19,22 +27,10 @@ while ($row = mysqli_fetch_assoc($query)) {
 
 <form  method="post">
     <br />
-    <label for="comments">comments:</label>
-    <input type="text" id="comments" name="comments" style="width: 800px; height: 100px;">
+    <!-- <label for="comments">comments:</label> -->
+    <textarea name="comments" cols="100" rows="8">欢迎在此处写评论</textarea>
     <br />
-    <input type="submit" value="Submit">
+    <br />
+    <input type="submit" value="提交">
     <br />
 </form>
-
-<?php
-    if (isset($_POST['comments'])) {
-        $context = $_POST["comments"];
-        $page_id = $_GET['page_id'];
-        $email = $_SESSION['email'];
-        if (!$email) $email = "Anonymous";
-        $sql = "insert into comments(context, page_id, user_email) 
-                values('".$context."','".$page_id."','".$email."')";
-        mysqli_query($conn,$sql);
-        redirectWithoutPostVariables();
-    }
-?>

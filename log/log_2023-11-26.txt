@@ -1,0 +1,64 @@
+[2023-11-26 9:45:08.940093] [info] haitao.long@sjsu.edu, admin_view_all_questions.php, select * from questions where question_id = 18
+[2023-11-26 9:45:14.397928] [error] SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'C' for column `dmvhelper`.`questions`.`answer` at row 1
+[2023-11-26 9:46:14.171736] [info] haitao.long@sjsu.edu, admin_view_all_questions.php, select * from questions order by question_id desc
+[2023-11-26 9:46:16.071187] [info] haitao.long@sjsu.edu, admin_view_all_questions.php, select * from questions where question_id = 18
+[2023-11-26 9:46:28.308108] [info] haitao.long@sjsu.edu, admin_process_update_question.php, UPDATE questions
+                SET stem = '在转弯时为什么要格外小心摩托车？',
+                    num_of_options = 4,
+                    option1 = ' 因为它们速度太快。',
+                    option2 = ' 因为它们享有优先转弯的特权。',
+                    option3 = ' 因为它们体积小且难以发现。',
+                    option4 = ' 因为它们经常切换车道。',
+                    answer = '3',
+                    page_id = '111'
+                WHERE question_id = 18
+[2023-11-26 9:46:28.324717] [error] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`dmvhelper`.`questions`, CONSTRAINT `questions_ibfk_1` FOREIGN KEY (`page_id`) REFERENCES `pages` (`page_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[2023-11-26 9:46:54.757704] [info] haitao.long@sjsu.edu, admin_view_all_questions.php, select * from questions order by question_id desc
+[2023-11-26 9:48:07.912662] [info] haitao.long@sjsu.edu, admin_view_all_questions.php, select * from questions where question_id = 18
+[2023-11-26 9:48:11.205925] [info] haitao.long@sjsu.edu, admin_process_update_question.php, UPDATE questions
+                SET stem = '在转弯时为什么要格外小心摩托车？',
+                    num_of_options = 4,
+                    option1 = ' 因为它们速度太快。',
+                    option2 = ' 因为它们享有优先转弯的特权。',
+                    option3 = ' 因为它们体积小且难以发现。',
+                    option4 = ' 因为它们经常切换车道。',
+                    answer = '3',
+                    page_id = '1'
+                WHERE question_id = 18
+[2023-11-26 9:48:11.211596] [error] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`dmvhelper`.`questions`, CONSTRAINT `questions_ibfk_1` FOREIGN KEY (`page_id`) REFERENCES `pages` (`page_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[2023-11-26 9:49:40.320425] [info] haitao.long@sjsu.edu, admin_view_all_questions.php, select * from questions order by question_id desc
+[2023-11-26 9:49:41.964257] [info] haitao.long@sjsu.edu, admin_view_all_questions.php, select * from questions where question_id = 18
+[2023-11-26 9:49:45.542509] [info] haitao.long@sjsu.edu, admin_process_update_question.php, UPDATE questions
+                SET stem = '在转弯时为什么要格外小心摩托车？增加一点内容',
+                    num_of_options = 4,
+                    option1 = ' 因为它们速度太快。',
+                    option2 = ' 因为它们享有优先转弯的特权。',
+                    option3 = ' 因为它们体积小且难以发现。',
+                    option4 = ' 因为它们经常切换车道。',
+                    answer = '3',
+                    page_id = 's6_1'
+                WHERE question_id = 18
+[2023-11-26 9:49:50.262973] [info] haitao.long@sjsu.edu, admin_view_all_questions.php, select * from questions order by question_id desc
+[2023-11-26 9:49:52.288543] [info] haitao.long@sjsu.edu, admin_view_all_questions.php, select * from questions where question_id = 18
+[2023-11-26 9:49:56.273122] [info] haitao.long@sjsu.edu, admin_process_update_question.php, UPDATE questions
+                SET stem = '在转弯时为什么要格外小心摩托车？',
+                    num_of_options = 4,
+                    option1 = ' 因为它们速度太快。',
+                    option2 = ' 因为它们享有优先转弯的特权。',
+                    option3 = ' 因为它们体积小且难以发现。',
+                    option4 = ' 因为它们经常切换车道。',
+                    answer = '3',
+                    page_id = 's6_1'
+                WHERE question_id = 18
+[2023-11-26 9:51:18.590431] [info] haitao.long@sjsu.edu, admin_view_delete_update_questions.php, select * from questions order by question_id desc
+[2023-11-26 9:56:51.718882] [info] haitao.long@sjsu.edu, user_mock_test.php, select * from questions order by rand() limit 2
+[2023-11-26 9:56:52.757932] [info] haitao.long@sjsu.edu, user_view_all_tests.php, SELECT * FROM mock_tests 
+        WHERE user_email = 'haitao.long@sjsu.edu' order by test_time desc
+[2023-11-26 9:56:54.418606] [info] haitao.long@sjsu.edu, user_view_all_wrong_questions.php, SELECT * from users_practice_wrong_questions WHERE user_email = 'haitao.long@sjsu.edu'
+[2023-11-26 9:56:54.419637] [info] haitao.long@sjsu.edu, user_view_all_wrong_questions.php, SELECT * FROM questions WHERE question_id = 7
+[2023-11-26 9:56:54.420216] [info] haitao.long@sjsu.edu, user_view_all_wrong_questions.php, SELECT * FROM questions WHERE question_id = 11
+[2023-11-26 9:56:58.234031] [info] haitao.long@sjsu.edu, user_view_all_tests.php, SELECT * FROM mock_tests 
+        WHERE user_email = 'haitao.long@sjsu.edu' order by test_time desc
+[2023-11-26 9:57:11.649698] [info] haitao.long@sjsu.edu, user_view_all_wrong_questions.php, SELECT * from users_practice_wrong_questions WHERE user_email = 'haitao.long@sjsu.edu'
+[2023-11-26 9:57:11.667018] [info] haitao.long@sjsu.edu, user_view_all_wrong_questions.php, SELECT * FROM questions WHERE question_id = 7
+[2023-11-26 9:57:11.667820] [info] haitao.long@sjsu.edu, user_view_all_wrong_questions.php, SELECT * FROM questions WHERE question_id = 11

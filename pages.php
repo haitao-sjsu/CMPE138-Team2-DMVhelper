@@ -13,7 +13,7 @@
 
     <!--LOGIN WEBSITE-->
     <?php include('include/login.php') ?>
-    <br>
+    <hr>
 
     <!-- MENU -->
     <?php include('include/menu.php') ?>

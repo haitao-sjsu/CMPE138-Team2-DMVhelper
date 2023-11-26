@@ -1,3 +1,7 @@
+<a href="index.php">首页</a>
+<br />
+<a href="about.php">关于</a>
+<br />
 <a href="pages.php?page_id=s1">第1节：加州驾驶员执照（The California Driver’s License）</a>
 <br />
 <a href="pages.php?page_id=s2">第2节：获得教学许可证和驾照（Getting an Instruction Permit and Driver’s License）</a>

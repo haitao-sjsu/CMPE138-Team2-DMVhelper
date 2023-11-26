@@ -1,4 +1,4 @@
-<?php include('../include/config.php') ?>
+<?php include('include/config.php') ?>
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Retrieve user input

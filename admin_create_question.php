@@ -1,10 +1,16 @@
+<?php include('include/config.php') ?>
+
 <html>
     <head>
-        <title>Create Question</title>
-        <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <title>增加题目</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
-
     <body>
+    <!-- HEADER -->
+    <div class="center-text"><h1>增加题目</h1></div>
+    <!--LOGIN-->
+    <?php include('include/login.php') ?>
+    <hr>
 
     <form action="process_create_question.php" method="post">
     <label for="question_stem">question_stem:</label>
