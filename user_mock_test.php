@@ -2,12 +2,12 @@
 
 <html>
     <head>
-        <title>新的模拟测试</title>
+        <title><?php echo $UI['new_mock_test']['title'][$lang] ?></title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <!-- HEADER -->
-    <div class="center-text"><h1>新的模拟测试</h1></div>
+    <div class="center-text"><h1><?php echo $UI['new_mock_test']['title'][$lang] ?></h1></div>
     <!--LOGIN-->
     <?php include('include/login.php') ?>
     <hr>
@@ -42,7 +42,7 @@ foreach ($selected_questions as $q) {
     }
 }
 echo <<< _END
-<input type="submit" value="提交">
+<input type="submit" value="{$UI['new_mock_test']['submit'][$lang]}">
 </form>
 _END;
 ?>

@@ -2,12 +2,12 @@
 
 <html>
     <head>
-        <title>之前的所有测试</title>
+        <title><?php echo $UI['user_view_all_tests']['title'][$lang]?></title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <!-- HEADER -->
-    <div class="center-text"><h1>之前的所有测试</h1></div>
+    <div class="center-text"><h1><?php echo $UI['user_view_all_tests']['title'][$lang]?></h1></div>
     <!--LOGIN-->
     <?php include('include/login.php') ?>
     <hr>
@@ -22,7 +22,7 @@ foreach ($results as $row) {
     $test_id = $row['test_id'];
 
     echo <<< _END
-        <p>$test_time---<a href="user_view_one_test.php?test_id=$test_id">测试</a></p>
+        <p>$test_time---<a href="user_view_one_test.php?test_id=$test_id">{$UI['user_view_all_tests']['test'][$lang]}</a></p>
     _END;
 }
 ?>

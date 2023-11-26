@@ -86,24 +86,24 @@
 	if(isset($_SESSION['email'])) {
 		echo <<< _END
 			<ul class = 'menu'>
-			<li><a href="index.php">首页</a></li>
-			<li><a href="user_mock_test.php">新的模拟测试</a></li>
-			<li><a href="user_view_all_tests.php">之前的模拟测试</a></li>
-			<li><a href="user_view_all_wrong_questions.php">做错的所有题目</a></li>
+			<li><a href="index.php">{$UI['menu']['home_page'][$lang]}</a></li>
+			<li><a href="user_mock_test.php">{$UI['menu']['new_mock_test'][$lang]}</a></li>
+			<li><a href="user_view_all_tests.php">{$UI['menu']['previous_mock_test'][$lang]}</a></li>
+			<li><a href="user_view_all_wrong_questions.php">{$UI['menu']['all_wrong_questions'][$lang]}</a></li>
 		_END;
 		if ($_SESSION['is_admin']) {
 			echo <<< _END
-				<li><a href="admin_crud.php">管理员操作面板</a></li>
+				<li><a href="admin_crud.php">{$UI['menu']['admin_crud'][$lang]}</a></li>
 			_END;
 		}
 		echo <<< _END
-		<li >logged in as  {$_SESSION['email']}</li>
+		<li >{$UI['menu']['has logged in'][$lang]}  {$_SESSION['email']}</li>
 		_END;
 		echo <<< _END
 		<li>
 		<form method="post">
 		<input type="hidden" name="logout" value="true"/>
-		<input type="submit" value="logout"/>
+		<input type="submit" value="{$UI['menu']['logout'][$lang]}"/>
 		</form>
 		</li>
 		_END;
@@ -114,8 +114,8 @@
 
 	else {
 		echo <<< _END
-		<button onclick="document.getElementById('id01').style.display='block'">Login</button>
-		<button onclick="document.getElementById('id02').style.display='block'">Register</button>
+		<button onclick="document.getElementById('id01').style.display='block'">{$UI['menu']['login'][$lang]}</button>
+		<button onclick="document.getElementById('id02').style.display='block'">{$UI['menu']['register'][$lang]}</button>
 		_END;
 	}
 ?>
@@ -129,19 +129,15 @@
 		
 
 		<div class="container">
-		  <label for="uname"><b>Email</b></label>
-		  <input type="text" placeholder="Enter Email" name="reg_email" required>
+		  <label for="uname"><b><?php echo $UI['menu']['email'][$lang]?></b></label>
+		  <input type="text" placeholder="<?php echo $UI['menu']['enter email'][$lang]?>" name="reg_email" required>
 
-		  <label for="psw"><b>Password</b></label>
-		  <input type="password" placeholder="Enter Password" name="reg_psw" required>
+		  <label for="psw"><b><?php echo $UI['menu']['password'][$lang]?></b></label>
+		  <input type="password" placeholder="<?php echo $UI['menu']['enter password'][$lang]?>" name="reg_psw" required>
 
-		  <button type="submit">Register</button>
-		</div>
-
-		<div class="container" style="background-color:#f1f1f1">
-		  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-		 
-		</div>
+		  <button type="submit"><?php echo $UI['menu']['register'][$lang]?></button>
+		  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn"><?php echo $UI['menu']['cancel'][$lang]?></button>
+		</div>		 
 	  </form>
 	</div>
 
@@ -156,20 +152,16 @@
 		
 
 		<div class="container">
-		  <label for="uname"><b>Email</b></label>
-		  <input type="text" placeholder="Enter Email" name="email" required>
+		  <label for="uname"><b><?php echo $UI['menu']['email'][$lang]?></b></label>
+		  <input type="text" placeholder="<?php echo $UI['menu']['enter email'][$lang]?>" name="email" required>
 
-		  <label for="psw"><b>Password</b></label>
-		  <input type="password" placeholder="Enter Password" name="psw" required>
+		  <label for="psw"><b><?php echo $UI['menu']['passoword'][$lang]?></b></label>
+		  <input type="password" placeholder="<?php echo $UI['menu']['enter password'][$lang]?>" name="psw" required>
 
-		  <button type="submit">Login</button>
+		  <button type="submit"><?php echo $UI['menu']['login'][$lang]?></button>
+		  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><?php echo $UI['menu']['cancel'][$lang]?></button>
 
-		</div>
-
-		<div class="container" style="background-color:#f1f1f1">
-		  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-		  
-		</div>
+		</div>		  
 	  </form>
 	</div>
 </html> 

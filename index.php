@@ -3,7 +3,7 @@
 
 <html>
     <head>
-        <title>DMV Helper</title>
+        <title><?php echo $UI['index']['title'][$lang] ?></title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
 

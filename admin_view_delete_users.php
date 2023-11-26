@@ -2,12 +2,12 @@
 
 <html>
     <head>
-    <title>查看、删除用户</title>
+    <title><?php echo $UI['admin_crud_user']['title'][$lang] ?></title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <!-- HEADER -->
-    <div class="center-text"><h1>查看、删除用户</h1></div>
+    <div class="center-text"><h1><?php echo $UI['admin_crud_user']['title'][$lang] ?></h1></div>
     <!--LOGIN-->
     <?php include('include/login.php') ?>
     <hr>
@@ -29,7 +29,7 @@ foreach ($results as $row) {
 
 <form action="<?php echo $_SERVER['PHP_SELF']."?user_email=".$user_email; ?>" method="POST">
     <p><?php echo $user_email.'---is_admin? '; echo $is_admin ?> </p>
-    <input name="submit" type="submit" value="删除">
+    <input name="submit" type="submit" value="<?php echo $UI['admin_crud_user']['delete'][$lang] ?>">
 </form>
 <br>
 

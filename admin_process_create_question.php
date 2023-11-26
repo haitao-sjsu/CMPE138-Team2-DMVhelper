@@ -1,4 +1,16 @@
 <?php include('include/config.php') ?>
+<html>
+    <head>
+    <title><?php echo $UI['admin_crud_question']['title'][$lang] ?></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <!-- HEADER -->
+    <div class="center-text"><h1><?php echo $UI['admin_crud_question']['title'][$lang] ?></h1></div>
+    <!--LOGIN-->
+    <?php include('include/login.php') ?>
+    <hr>
+
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Retrieve user input
@@ -26,7 +38,7 @@
                         '".$option4."',
                         '".$answer."',
                         '".$page_id."')";
-        $result = mysqli_query($conn,$sql);
+        $result = $table_questions->insert($sql);
         
         if ($result)
             echo "creation successful";
@@ -34,3 +46,7 @@
             echo "creation fail";
     }
 ?>
+
+</body>
+</html>
+

@@ -1,9 +1,12 @@
 <?php
 include_once "Table.php";
-include_once "Logger.php";
 
+include_once "Logger.php";
 use Katzgrau\KLogger\Logger;
 use Psr\Log\LogLevel;
+
+include_once "language.php";
+$lang = 'en';
 
 $host = "localhost";
 $username = "root";

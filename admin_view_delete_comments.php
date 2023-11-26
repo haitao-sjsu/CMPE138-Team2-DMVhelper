@@ -2,12 +2,12 @@
 
 <html>
     <head>
-    <title>查看、删除评论</title>
+    <title><?php echo $UI['admin_crud_comment']['title'][$lang] ?></title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <!-- HEADER -->
-    <div class="center-text"><h1>查看、删除评论</h1></div>
+    <div class="center-text"><h1><?php echo $UI['admin_crud_comment']['title'][$lang] ?></h1></div>
     <!--LOGIN-->
     <?php include('include/login.php') ?>
     <hr>
@@ -33,7 +33,7 @@ foreach ($results as $row) {
 <form action="<?php echo $_SERVER['PHP_SELF']."?comment_id=".$comment_id; ?>" method="POST">
     <p><?php echo $user_email.'---'; echo $time_stamp ?> </p>
     <p><?php echo $page_id.': '.$context ?></p>
-    <input name="submit" type="submit" value="删除">
+    <input name="submit" type="submit" value="<?php echo $UI['admin_crud_comment']['delete'][$lang] ?>">
 </form>
 <br>
 

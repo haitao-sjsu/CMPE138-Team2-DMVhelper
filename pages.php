@@ -20,7 +20,7 @@
     <hr>
 
     <!-- CONTENT_QUESTION -->
-    <h1>相关习题</h1>
+    <h1><?php echo $UI['page']['related_question'][$lang] ?></h1>
     <?php include('include/questions.php') ?>
     <hr>
 
@@ -29,7 +29,7 @@
     <hr>
     
     <!-- COMMENTS -->
-    <h1>相关评论</h1>
+    <h1><?php echo $UI['page']['related_comment'][$lang] ?></h1>
     <?php include('include/comments.php') ?>
     <hr>
 

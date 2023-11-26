@@ -28,9 +28,9 @@ foreach ($comments as $c) {
 <form  method="post">
     <br />
     <!-- <label for="comments">comments:</label> -->
-    <textarea name="comments" cols="100" rows="8">欢迎在此处写评论</textarea>
+    <textarea name="comments" cols="100" rows="8"><?php echo $UI['page']['comment']['default_comment'][$lang]?></textarea>
     <br />
     <br />
-    <input type="submit" value="提交">
+    <input type="submit" value="<?php echo $UI['page']['comment']['submit'][$lang]?>">
     <br />
 </form>

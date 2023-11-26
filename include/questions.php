@@ -40,7 +40,7 @@ foreach ($questions as $row) {
     </label>
     <br />
     
-    <button onclick="check(<?php echo $qnum ?>, <?php echo $correct_answer ?>)"> 检查答案 </button>
+    <button onclick="check(<?php echo $qnum ?>, <?php echo $correct_answer ?>)"> <?php echo $UI['page']['question']['check'][$lang]?> </button>
 <?php
 }
 ?>

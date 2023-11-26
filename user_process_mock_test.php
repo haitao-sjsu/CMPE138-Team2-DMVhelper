@@ -3,7 +3,7 @@
 
 <html>
     <head>
-        <title>模拟测试</title>
+        <title><?php echo $UI['user_process_mock_test']['title'][$lang] ?></title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <style>
             .question-stem {
@@ -20,7 +20,7 @@
     </head>
     <body>
     <!-- HEADER -->
-    <div class="center-text"><h1>模拟测试结果</h1></div>
+    <div class="center-text"><h1><?php echo $UI['user_process_mock_test']['title'][$lang] ?></h1></div>
     <!--LOGIN-->
     <?php include('include/login.php') ?>
     <hr>
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $test_id = $table_mock_tests->last_insert_id();
 
     echo <<<_END
-    <p>此次测试已被记录数据库中。</p>
+    <p>{$UI['user_process_mock_test']['prompt_test'][$lang]}</p>
     _END;
 
     foreach($_POST as $qnum_question_id => $client_answer) {
@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $table_tests_contain_questions->insert($sql);
 
         if ($client_answer == $correct_answer)
-            echo "<p>回答正确</p>";
+            echo "<p>{$UI['user_process_mock_test']['prompt_right_question'][$lang]}</p>";
         else {
             $sql = "select * from users_practice_wrong_questions where user_email = '{$_SESSION['email']}' and question_id = {$question_id}";
             $result = $table_users_practice_wrong_questions->select($sql);
@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $sql = "insert into users_practice_wrong_questions (user_email, question_id, wrong_answer) values ('{$_SESSION['email']}', {$question_id}, {$client_answer})";
                 $table_users_practice_wrong_questions->insert($sql);
             }
-            echo "<p>回答错误。该错题已被记入错题库中。</p>";
+            echo "<p>{$UI['user_process_mock_test']['prompt_wrong_question'][$lang]}</p>";
         }
         echo "<br /><br />";
 
