@@ -13,7 +13,7 @@ $username = "root";
 $password = "";
 $database = "DMVhelper";
 
-$OPTION_QUESTION_IN_PAGE = 'limit 1';
+$OPTION_QUESTION_IN_PAGE = 'limit 2';
 $OPTION_COMMENT = 'order by time_stamp desc limit 2';
 $OPTION_USER_MOCK_TEST = 'order by rand() limit 2';
 $OPTION_USER_VIEW_ALL_TESTS = 'order by test_time desc';

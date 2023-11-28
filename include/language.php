@@ -66,6 +66,10 @@ $UI = array(
         ),
     ),
     'page' => array(
+        'title' => array(
+            'en' => 'DMV Helper',
+            'zh' => '加州驾照考试知识手册简体中文版（附带题目）'
+        ),
         'related_comment' => array(
             'en' => 'Related Comments',
             'zh' => '相关评论'
@@ -107,7 +111,7 @@ $UI = array(
             'zh' => '模拟测试结果'
         ),
         'prompt_test' => array(
-            'en' => 'This test is recorded into the database',
+            'en' => 'This test is recorded into the Previous Mock Tests.',
             'zh' => '此次测试已被记录数据库中。'
         ),
         'prompt_wrong_question' => array(

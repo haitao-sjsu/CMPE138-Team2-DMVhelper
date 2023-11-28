@@ -61,12 +61,12 @@
         	$_SESSION['email'] = $email;
 			$log->info($_SESSION['email'] . " logged in");
 			$_SESSION['is_admin'] = $result['is_admin'];
-		echo "<script type='text/javascript'>
-				window.onload = function() {
-					alert('Login successful!');
-					window.location='" . $_SERVER["REQUEST_URI"] . "';
-				}
-			 </script>";
+		// echo "<script type='text/javascript'>
+		// 		window.onload = function() {
+		// 			alert('Login successful!');
+		// 			window.location='" . $_SERVER["REQUEST_URI"] . "';
+		// 		}
+		// 	 </script>";
         }
 	  	else {//login unsuccesful
             echo "<script type='text/javascript'>

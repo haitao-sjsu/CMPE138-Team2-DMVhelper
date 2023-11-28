@@ -1,7 +1,8 @@
 <?php
     if (isset($_POST['comments'])) {
+        $user_email = $_SESSION['email'] ?? 'Anonymous';
         $sql = "INSERT INTO comments(context, page_id, user_email) 
-                values ('{$_POST["comments"]}', '{$_GET['page_id']}', '{$_SESSION['email']}')";
+                values ('{$_POST["comments"]}', '{$_GET['page_id']}', '$user_email')";
         $table_comments->insert($sql);
         redirectWithoutPostVariables();
     }
@@ -17,8 +18,8 @@ foreach ($comments as $c) {
 ?>
 
 <form>
-    <p><?php echo $user_email.'---'; echo $time_stamp ?> </p>
-    <p><?php echo $context ?></p>
+    <p class="comment"><?php echo $user_email.'---'; echo $time_stamp ?> </p>
+    <p class="comment"><?php echo $context ?></p>
 </form>
 
 <?php
@@ -28,7 +29,7 @@ foreach ($comments as $c) {
 <form  method="post">
     <br />
     <!-- <label for="comments">comments:</label> -->
-    <textarea name="comments" cols="100" rows="8"><?php echo $UI['page']['comment']['default_comment'][$lang]?></textarea>
+    <textarea name="comments" cols="50" rows="8"><?php echo $UI['page']['comment']['default_comment'][$lang]?></textarea>
     <br />
     <br />
     <input type="submit" value="<?php echo $UI['page']['comment']['submit'][$lang]?>">

@@ -3,7 +3,7 @@
 }
 
 .question-stem {
-    font-size: 1.5em;
+    font-size: 30px;
     font-weight: bold;
     color:black;
 }
@@ -40,10 +40,40 @@
     padding:            4px 6px;
     border:             1px solid #777;
     background:       #ddd;
-    color:            #d04;
+    color:              black;
     margin-right:       8px;
     border-radius:      5px;
     -moz-box-shadow:    2px 2px 2px #888;
     -webkit-box-shadow: 2px 2px 2px #888;
     box-shadow:         2px 2px 2px #888;
+    font-size: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.comment, textarea, .admincrud, p,input[type="submit"] {
+    font-size: 30px;
+}
+
+.admincrud {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+input[type="submit"], button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 25px;
 }

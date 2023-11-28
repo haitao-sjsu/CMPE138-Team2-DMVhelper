@@ -16,7 +16,7 @@ echo <<< _END
 <form action="user_process_mock_test.php" method="post">
 _END;
 
-$sql = "select * from questions {$OPTION_USER_MOCK_TEST}";
+$sql = "select * from questions where lang = 'en' {$OPTION_USER_MOCK_TEST}";
 $selected_questions = $table_questions->select($sql);
 $qnum = 0;
 

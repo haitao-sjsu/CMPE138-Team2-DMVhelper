@@ -1,0 +1,50 @@
+[2023-11-27 22:35:50.326764] [info] Anonymous, pages.php, SELECT * FROM users 
+		     	WHERE user_email='haitao_long@foxmail.com'
+[2023-11-27 22:35:50.334824] [info] Anonymous, pages.php, INSERT INTO users(user_email, hashed_password) 
+					VALUES ('haitao_long@foxmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92')
+[2023-11-27 22:35:50.351388] [info] haitao_long@foxmail.com registered 
+[2023-11-27 22:35:50.354826] [info] haitao_long@foxmail.com, pages.php, SELECT * FROM questions WHERE page_id= 's7_1' and lang = 'en' limit 2
+[2023-11-27 22:35:50.357153] [info] haitao_long@foxmail.com, pages.php, SELECT * FROM pages WHERE page_id= 's7_1'
+[2023-11-27 22:35:50.362865] [info] haitao_long@foxmail.com, pages.php, SELECT * FROM comments WHERE page_id= 's7_1' order by time_stamp desc limit 2;
+[2023-11-27 22:36:34.944926] [info] haitao_long@foxmail.com, user_mock_test.php, select * from questions where lang = 'en' order by rand() limit 2
+[2023-11-27 22:47:02.632385] [info] haitao_long@foxmail.com, pages.php, SELECT * FROM questions WHERE page_id= 's7_1' and lang = 'en' limit 2
+[2023-11-27 22:47:02.641450] [info] haitao_long@foxmail.com, pages.php, SELECT * FROM pages WHERE page_id= 's7_1'
+[2023-11-27 22:47:02.646707] [info] haitao_long@foxmail.com, pages.php, SELECT * FROM comments WHERE page_id= 's7_1' order by time_stamp desc limit 2;
+[2023-11-27 22:47:04.883141] [info] haitao_long@foxmail.com logged out
+[2023-11-27 22:47:04.884711] [info] Anonymous, pages.php, SELECT * FROM questions WHERE page_id= 's7_1' and lang = 'en' limit 2
+[2023-11-27 22:47:04.886085] [info] Anonymous, pages.php, SELECT * FROM pages WHERE page_id= 's7_1'
+[2023-11-27 22:47:04.889482] [info] Anonymous, pages.php, SELECT * FROM comments WHERE page_id= 's7_1' order by time_stamp desc limit 2;
+[2023-11-27 22:47:13.307028] [info] Anonymous, pages.php, SELECT * FROM users WHERE user_email='haitao.long@sjsu.edu' AND hashed_password='8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+[2023-11-27 22:47:13.308353] [info] haitao.long@sjsu.edu logged in
+[2023-11-27 22:47:13.309627] [info] haitao.long@sjsu.edu, pages.php, SELECT * FROM questions WHERE page_id= 's7_1' and lang = 'en' limit 2
+[2023-11-27 22:47:13.310430] [info] haitao.long@sjsu.edu, pages.php, SELECT * FROM pages WHERE page_id= 's7_1'
+[2023-11-27 22:47:13.312390] [info] haitao.long@sjsu.edu, pages.php, SELECT * FROM comments WHERE page_id= 's7_1' order by time_stamp desc limit 2;
+[2023-11-27 22:47:56.445627] [info] haitao.long@sjsu.edu, admin_process_create_question.php, insert into questions (stem, 
+                                       num_of_options, 
+                                       option1, 
+                                       option2, 
+                                       option3, 
+                                       option4, 
+                                       answer, 
+                                       page_id)
+                values('The broken white lines on the pavement mean that',
+                        3,
+                        'traffic moves in opposite directions.',
+                        'passing is allowed if done safely.',
+                        'no passing is allowed.',
+                        '',
+                        '2',
+                        's6_1')
+[2023-11-27 22:47:59.101342] [info] haitao.long@sjsu.edu, admin_view_delete_update_questions.php, select * from questions order by question_id desc
+[2023-11-27 22:50:57.938038] [info] haitao.long@sjsu.edu, pages.php, SELECT * FROM questions WHERE page_id= 's7_1' and lang = 'en' limit 2
+[2023-11-27 22:50:57.943567] [info] haitao.long@sjsu.edu, pages.php, SELECT * FROM pages WHERE page_id= 's7_1'
+[2023-11-27 22:50:57.948697] [info] haitao.long@sjsu.edu, pages.php, SELECT * FROM comments WHERE page_id= 's7_1' order by time_stamp desc limit 2;
+[2023-11-27 23:13:40.979397] [info] haitao.long@sjsu.edu, admin_view_delete_users.php, select * from users 
+[2023-11-27 23:14:27.042634] [info] haitao.long@sjsu.edu, user_view_all_tests.php, SELECT * FROM mock_tests 
+        WHERE user_email = 'haitao.long@sjsu.edu' order by test_time desc
+[2023-11-27 23:14:28.011013] [info] haitao.long@sjsu.edu, user_mock_test.php, select * from questions where lang = 'en' order by rand() limit 2
+[2023-11-27 23:14:32.130738] [info] haitao.long@sjsu.edu, user_mock_test.php, select * from questions where lang = 'en' order by rand() limit 2
+[2023-11-27 23:14:33.267007] [info] haitao.long@sjsu.edu, user_view_all_tests.php, SELECT * FROM mock_tests 
+        WHERE user_email = 'haitao.long@sjsu.edu' order by test_time desc
+[2023-11-27 23:14:35.516529] [info] haitao.long@sjsu.edu, user_view_all_wrong_questions.php, SELECT * from users_practice_wrong_questions WHERE user_email = 'haitao.long@sjsu.edu' order by time_stamp desc
+[2023-11-27 23:14:41.181665] [info] haitao.long@sjsu.edu logged out

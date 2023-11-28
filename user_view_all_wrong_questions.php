@@ -25,7 +25,7 @@
     <hr>
 
 <?php
-$sql = "SELECT * from users_practice_wrong_questions WHERE user_email = '{$_SESSION['email']}'";
+$sql = "SELECT * from users_practice_wrong_questions WHERE user_email = '{$_SESSION['email']}' order by time_stamp desc";
 $records = $table_users_practice_wrong_questions->select($sql);
 $qnum = 0;
 
